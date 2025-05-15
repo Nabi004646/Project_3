@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Google Login - Responsive</title>
+
+  <style>
+    /* Reset and basic body styling */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    /* Login container box */
+    .login-container {
+      background-color: white;
+      padding: 40px 30px;
+      width: 100%;
+      max-width: 400px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Google logo */
+    .logo {
+      display: block;
+      margin: 0 auto 20px;
+      height: 40px;
+    }
+
+    /* Heading and paragraph */
+    h2 {
+      text-align: center;
+      font-weight: normal;
+      margin-bottom: 10px;
+    }
+
+    p {
+      text-align: center;
+      color: #5f6368;
+      font-size: 14px;
+      margin-bottom: 30px;
+    }
+
+    /* Input styles */
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    /* Button styles */
+    .btn-next {
+      width: 100%;
+      background-color: #1a73e8;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .btn-next:hover {
+      background-color: #1669c1;
+    }
+
+    /* Footer link */
+    .footer-link {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .footer-link a {
+      color: #1a73e8;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .footer-link a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive behavior for smaller screens */
+    @media (max-width: 480px) {
+      .login-container {
+        padding: 30px 20px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+
+      p {
+        font-size: 13px;
+      }
+
+      .btn-next {
+        font-size: 15px;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .login-container {
+        padding: 50px 40px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-container">
+    <!-- Google logo -->
+    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo" class="logo">
+
+    <!-- Heading and description -->
+    <h2>Sign in</h2>
+    <p>to continue to Gmail</p>
+
+    <!-- Input fields -->
+    <input type="email" placeholder="Email or phone" required>
+    <input type="password" placeholder="Enter your password" required>
+
+    <!-- Button -->
+    <button class="btn-next">Next</button>
+
+    <!-- Footer link -->
+    <div class="footer-link">
+      <a href="#">Forgot email?</a>
+    </div>
+  </div>
+
+</body>
+</html>
